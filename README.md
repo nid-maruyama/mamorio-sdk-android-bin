@@ -12,7 +12,7 @@ allprojects {
 * アプリのbuild.gradleにMamorioSDKを追加する
 ```javascript
 dependencies {
-    compile 'jp.mamorio:mamorioSDK:8.05'
+    implementation 'jp.mamorio:mamorioSDK:8.05'
 }
 ```
 
