@@ -12,7 +12,7 @@ allprojects {
 * アプリのbuild.gradleにMamorioSDKを追加する
 ```javascript
 dependencies {
-    implementation 'jp.mamorio:mamorioSDK:8.05'
+    implementation 'jp.mamorio:mamorioSDK:8.10'
 }
 ```
 
@@ -345,6 +345,11 @@ setEmail,setSynchronizeModeで設定した値をサーバーに送信する
 ネットワーク接続不可の場合onErrorが呼ばれる
 ```
 
+* public void refresh(final Callback callback);
+
+```
+サーバーからユーザー情報を取得する
+```
 
 ### Mamorio
 MAMORIOそれ自体を表すモデルです
