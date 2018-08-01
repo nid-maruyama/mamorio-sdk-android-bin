@@ -255,6 +255,7 @@ MAMORIOのユーザーを表すモデルであり、基本的にシングルト�
 ```
 既存ユーザーとしてログインする
 ログイン完了時にonSuccessが呼ばれ、ログイン状態になる
+メールアドレス未認証の場合、onErrorが呼ばれる。この時error.getErrorKey() の値が"unconfirmed"になる。
 authToken不正、ユーザー存在せず、パスワード不正の場合onErrorが呼ばれる
 ネットワーク接続不可の場合onErrorが呼ばれる
 ```
